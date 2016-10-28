@@ -1,0 +1,38 @@
+Project structure:
+
+# Sources
+
+## Sources/App
+ - The App folder contains all the source code grouped into organized subfolders.
+
+### Sources/App/Models
+ - The Models folder contains database and other models, following the MVC pattern.
+ 
+### Sources/App/Controllers
+ - The Controllers folder contains route controllers, following the MVC pattern.
+ - Controllers help you organize related functionality into a single place. They can also be used to create RESTful resources.
+
+# Resources
+
+## Resources/Views:      
+ - The Views folder in Resources is where Vapor will look when you render views. 
+ - Views return HTML data from your application.
+
+# Public
+ - Any resources that your views need, such as images, styles, and scripts, should be placed in the Public folder at the root of your application.
+
+# Config
+
+ - For Vapor applications, configuration files are expected to be nested under a top level folder named Config.
+
+ Example of a "servers.json" config file that's saying that our application should start a single server named 'http' serving port 8080 on host 0.0.0.0 : 
+{
+  "http": {
+    "host": "0.0.0.0",
+      "port": 8080,
+      "custom-key": "custom value"
+  }
+}
+
+The "custom-key" can be accessed programatically by: "let customValue = app.config["server", "http", "custom-key"].string"
+
