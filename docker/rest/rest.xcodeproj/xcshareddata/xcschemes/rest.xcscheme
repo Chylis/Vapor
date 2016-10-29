@@ -532,9 +532,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "______Target_rest"
-               BuildableName = "rest"
-               BlueprintName = "rest"
+               BlueprintIdentifier = "______Target_VaporJWT"
+               BuildableName = "VaporJWT.framework"
+               BlueprintName = "VaporJWT"
+               ReferencedContainer = "container:rest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "______Target_App"
+               BuildableName = "App"
+               BlueprintName = "App"
                ReferencedContainer = "container:rest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

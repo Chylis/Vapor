@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F7E80FA1DC34B520089A393 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E80F71DC34A3C0089A393 /* main.swift */; };
+		5FC27EC51DC501E400E16295 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27EBE1DC501E400E16295 /* UserController.swift */; };
+		5FC27EC61DC501E400E16295 /* JWTFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27EC01DC501E400E16295 /* JWTFilter.swift */; };
+		5FC27EC71DC501E400E16295 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27EC21DC501E400E16295 /* AppUser.swift */; };
+		5FC27EC81DC501E400E16295 /* JWTUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27EC41DC501E400E16295 /* JWTUtil.swift */; };
+		5FC27ECB1DC5041E00E16295 /* Request+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27ECA1DC5041E00E16295 /* Request+User.swift */; };
+		5FC27ECD1DC5061000E16295 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27ECC1DC5061000E16295 /* Controller.swift */; };
+		_LinkFileRef_Auth_via_App /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Auth" /* Auth.framework */; };
 		_LinkFileRef_Auth_via_Vapor /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Auth" /* Auth.framework */; };
-		_LinkFileRef_Auth_via_rest /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Auth" /* Auth.framework */; };
+		_LinkFileRef_BCrypt_via_App /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_Auth /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_Cache /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_Cookies /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
@@ -23,8 +29,9 @@
 		_LinkFileRef_BCrypt_via_TypeSafeRouting /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_URI /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_Vapor /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
+		_LinkFileRef_BCrypt_via_VaporJWT /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
 		_LinkFileRef_BCrypt_via_WebSockets /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
-		_LinkFileRef_BCrypt_via_rest /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
+		_LinkFileRef_CLibreSSL_via_App /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_Auth /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_BCrypt /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_Cache /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
@@ -45,11 +52,12 @@
 		_LinkFileRef_CLibreSSL_via_TypeSafeRouting /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_URI /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_Vapor /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
+		_LinkFileRef_CLibreSSL_via_VaporJWT /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
 		_LinkFileRef_CLibreSSL_via_WebSockets /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
-		_LinkFileRef_CLibreSSL_via_rest /* CLibreSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CLibreSSL" /* CLibreSSL.framework */; };
+		_LinkFileRef_Cache_via_App /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cache" /* Cache.framework */; };
 		_LinkFileRef_Cache_via_Auth /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cache" /* Cache.framework */; };
 		_LinkFileRef_Cache_via_Vapor /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cache" /* Cache.framework */; };
-		_LinkFileRef_Cache_via_rest /* Cache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cache" /* Cache.framework */; };
+		_LinkFileRef_Cipher_via_App /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_Auth /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_Cache /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_Cookies /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
@@ -63,8 +71,9 @@
 		_LinkFileRef_Cipher_via_TypeSafeRouting /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_URI /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_Vapor /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
+		_LinkFileRef_Cipher_via_VaporJWT /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
 		_LinkFileRef_Cipher_via_WebSockets /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
-		_LinkFileRef_Cipher_via_rest /* Cipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cipher" /* Cipher.framework */; };
+		_LinkFileRef_Console_via_App /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
 		_LinkFileRef_Console_via_Auth /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
 		_LinkFileRef_Console_via_Cache /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
 		_LinkFileRef_Console_via_Cookies /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
@@ -74,11 +83,11 @@
 		_LinkFileRef_Console_via_Settings /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
 		_LinkFileRef_Console_via_TypeSafeRouting /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
 		_LinkFileRef_Console_via_Vapor /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
-		_LinkFileRef_Console_via_rest /* Console.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Console" /* Console.framework */; };
+		_LinkFileRef_Cookies_via_App /* Cookies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cookies" /* Cookies.framework */; };
 		_LinkFileRef_Cookies_via_Auth /* Cookies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cookies" /* Cookies.framework */; };
 		_LinkFileRef_Cookies_via_Sessions /* Cookies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cookies" /* Cookies.framework */; };
 		_LinkFileRef_Cookies_via_Vapor /* Cookies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cookies" /* Cookies.framework */; };
-		_LinkFileRef_Cookies_via_rest /* Cookies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Cookies" /* Cookies.framework */; };
+		_LinkFileRef_Core_via_App /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_Auth /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_BCrypt /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_Cache /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
@@ -102,8 +111,9 @@
 		_LinkFileRef_Core_via_TypeSafeRouting /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_URI /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_Vapor /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
+		_LinkFileRef_Core_via_VaporJWT /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
 		_LinkFileRef_Core_via_WebSockets /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
-		_LinkFileRef_Core_via_rest /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Core" /* Core.framework */; };
+		_LinkFileRef_Essentials_via_App /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_Auth /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_BCrypt /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_Cache /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
@@ -122,8 +132,9 @@
 		_LinkFileRef_Essentials_via_TypeSafeRouting /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_URI /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_Vapor /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
+		_LinkFileRef_Essentials_via_VaporJWT /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
 		_LinkFileRef_Essentials_via_WebSockets /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
-		_LinkFileRef_Essentials_via_rest /* Essentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Essentials" /* Essentials.framework */; };
+		_LinkFileRef_Fluent_via_App /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
 		_LinkFileRef_Fluent_via_Auth /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
 		_LinkFileRef_Fluent_via_Cache /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
 		_LinkFileRef_Fluent_via_Cookies /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
@@ -133,7 +144,7 @@
 		_LinkFileRef_Fluent_via_Settings /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
 		_LinkFileRef_Fluent_via_TypeSafeRouting /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
 		_LinkFileRef_Fluent_via_Vapor /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
-		_LinkFileRef_Fluent_via_rest /* Fluent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Fluent" /* Fluent.framework */; };
+		_LinkFileRef_HMAC_via_App /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_Auth /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_Cache /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_Cookies /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
@@ -147,11 +158,12 @@
 		_LinkFileRef_HMAC_via_TypeSafeRouting /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_URI /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_Vapor /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
+		_LinkFileRef_HMAC_via_VaporJWT /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
 		_LinkFileRef_HMAC_via_WebSockets /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
-		_LinkFileRef_HMAC_via_rest /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
+		_LinkFileRef_HTTPRouting_via_App /* HTTPRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTPRouting" /* HTTPRouting.framework */; };
 		_LinkFileRef_HTTPRouting_via_TypeSafeRouting /* HTTPRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTPRouting" /* HTTPRouting.framework */; };
 		_LinkFileRef_HTTPRouting_via_Vapor /* HTTPRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTPRouting" /* HTTPRouting.framework */; };
-		_LinkFileRef_HTTPRouting_via_rest /* HTTPRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTPRouting" /* HTTPRouting.framework */; };
+		_LinkFileRef_HTTP_via_App /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
 		_LinkFileRef_HTTP_via_Auth /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
 		_LinkFileRef_HTTP_via_Cache /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
 		_LinkFileRef_HTTP_via_Cookies /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
@@ -162,7 +174,7 @@
 		_LinkFileRef_HTTP_via_TypeSafeRouting /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
 		_LinkFileRef_HTTP_via_Vapor /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
 		_LinkFileRef_HTTP_via_WebSockets /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
-		_LinkFileRef_HTTP_via_rest /* HTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HTTP" /* HTTP.framework */; };
+		_LinkFileRef_Hash_via_App /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_Auth /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_Cache /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_Cookies /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
@@ -176,8 +188,9 @@
 		_LinkFileRef_Hash_via_TypeSafeRouting /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_URI /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_Vapor /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
+		_LinkFileRef_Hash_via_VaporJWT /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
 		_LinkFileRef_Hash_via_WebSockets /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
-		_LinkFileRef_Hash_via_rest /* Hash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hash" /* Hash.framework */; };
+		_LinkFileRef_JSON_via_App /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
 		_LinkFileRef_JSON_via_Auth /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
 		_LinkFileRef_JSON_via_Cache /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
 		_LinkFileRef_JSON_via_Cookies /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
@@ -187,7 +200,8 @@
 		_LinkFileRef_JSON_via_Settings /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
 		_LinkFileRef_JSON_via_TypeSafeRouting /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
 		_LinkFileRef_JSON_via_Vapor /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
-		_LinkFileRef_JSON_via_rest /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
+		_LinkFileRef_JSON_via_VaporJWT /* JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_JSON" /* JSON.framework */; };
+		_LinkFileRef_Jay_via_App /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
 		_LinkFileRef_Jay_via_Auth /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
 		_LinkFileRef_Jay_via_Cache /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
 		_LinkFileRef_Jay_via_Cookies /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
@@ -198,7 +212,8 @@
 		_LinkFileRef_Jay_via_Settings /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
 		_LinkFileRef_Jay_via_TypeSafeRouting /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
 		_LinkFileRef_Jay_via_Vapor /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
-		_LinkFileRef_Jay_via_rest /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
+		_LinkFileRef_Jay_via_VaporJWT /* Jay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Jay" /* Jay.framework */; };
+		_LinkFileRef_Leaf_via_App /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
 		_LinkFileRef_Leaf_via_Auth /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
 		_LinkFileRef_Leaf_via_Cache /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
 		_LinkFileRef_Leaf_via_Cookies /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
@@ -208,7 +223,7 @@
 		_LinkFileRef_Leaf_via_Settings /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
 		_LinkFileRef_Leaf_via_TypeSafeRouting /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
 		_LinkFileRef_Leaf_via_Vapor /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
-		_LinkFileRef_Leaf_via_rest /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Leaf" /* Leaf.framework */; };
+		_LinkFileRef_Node_via_App /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
 		_LinkFileRef_Node_via_Auth /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
 		_LinkFileRef_Node_via_Cache /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
 		_LinkFileRef_Node_via_Cookies /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
@@ -221,7 +236,8 @@
 		_LinkFileRef_Node_via_Settings /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
 		_LinkFileRef_Node_via_TypeSafeRouting /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
 		_LinkFileRef_Node_via_Vapor /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
-		_LinkFileRef_Node_via_rest /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
+		_LinkFileRef_Node_via_VaporJWT /* Node.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Node" /* Node.framework */; };
+		_LinkFileRef_PathIndexable_via_App /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
 		_LinkFileRef_PathIndexable_via_Auth /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
 		_LinkFileRef_PathIndexable_via_Cache /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
 		_LinkFileRef_PathIndexable_via_Cookies /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
@@ -235,7 +251,8 @@
 		_LinkFileRef_PathIndexable_via_Settings /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
 		_LinkFileRef_PathIndexable_via_TypeSafeRouting /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
 		_LinkFileRef_PathIndexable_via_Vapor /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
-		_LinkFileRef_PathIndexable_via_rest /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
+		_LinkFileRef_PathIndexable_via_VaporJWT /* PathIndexable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PathIndexable" /* PathIndexable.framework */; };
+		_LinkFileRef_Polymorphic_via_App /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
 		_LinkFileRef_Polymorphic_via_Auth /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
 		_LinkFileRef_Polymorphic_via_Cache /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
 		_LinkFileRef_Polymorphic_via_Console /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
@@ -250,7 +267,8 @@
 		_LinkFileRef_Polymorphic_via_Settings /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
 		_LinkFileRef_Polymorphic_via_TypeSafeRouting /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
 		_LinkFileRef_Polymorphic_via_Vapor /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
-		_LinkFileRef_Polymorphic_via_rest /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
+		_LinkFileRef_Polymorphic_via_VaporJWT /* Polymorphic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Polymorphic" /* Polymorphic.framework */; };
+		_LinkFileRef_Random_via_App /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_Auth /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_BCrypt /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_Cache /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
@@ -267,12 +285,13 @@
 		_LinkFileRef_Random_via_TypeSafeRouting /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_URI /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_Vapor /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
+		_LinkFileRef_Random_via_VaporJWT /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
 		_LinkFileRef_Random_via_WebSockets /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
-		_LinkFileRef_Random_via_rest /* Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Random" /* Random.framework */; };
+		_LinkFileRef_Routing_via_App /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Routing" /* Routing.framework */; };
 		_LinkFileRef_Routing_via_HTTPRouting /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Routing" /* Routing.framework */; };
 		_LinkFileRef_Routing_via_TypeSafeRouting /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Routing" /* Routing.framework */; };
 		_LinkFileRef_Routing_via_Vapor /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Routing" /* Routing.framework */; };
-		_LinkFileRef_Routing_via_rest /* Routing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Routing" /* Routing.framework */; };
+		_LinkFileRef_SMTP_via_App /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
 		_LinkFileRef_SMTP_via_Auth /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
 		_LinkFileRef_SMTP_via_Cache /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
 		_LinkFileRef_SMTP_via_Cookies /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
@@ -282,11 +301,11 @@
 		_LinkFileRef_SMTP_via_Settings /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
 		_LinkFileRef_SMTP_via_TypeSafeRouting /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
 		_LinkFileRef_SMTP_via_Vapor /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
-		_LinkFileRef_SMTP_via_rest /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SMTP" /* SMTP.framework */; };
+		_LinkFileRef_Sessions_via_App /* Sessions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Sessions" /* Sessions.framework */; };
 		_LinkFileRef_Sessions_via_Vapor /* Sessions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Sessions" /* Sessions.framework */; };
-		_LinkFileRef_Sessions_via_rest /* Sessions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Sessions" /* Sessions.framework */; };
+		_LinkFileRef_Settings_via_App /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Settings" /* Settings.framework */; };
 		_LinkFileRef_Settings_via_Vapor /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Settings" /* Settings.framework */; };
-		_LinkFileRef_Settings_via_rest /* Settings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Settings" /* Settings.framework */; };
+		_LinkFileRef_SocksCore_via_App /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_Auth /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_Cache /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_Cookies /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
@@ -303,7 +322,7 @@
 		_LinkFileRef_SocksCore_via_URI /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_Vapor /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
 		_LinkFileRef_SocksCore_via_WebSockets /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
-		_LinkFileRef_SocksCore_via_rest /* SocksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_SocksCore" /* SocksCore.framework */; };
+		_LinkFileRef_Socks_via_App /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
 		_LinkFileRef_Socks_via_Auth /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
 		_LinkFileRef_Socks_via_Cache /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
 		_LinkFileRef_Socks_via_Cookies /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
@@ -319,7 +338,7 @@
 		_LinkFileRef_Socks_via_URI /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
 		_LinkFileRef_Socks_via_Vapor /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
 		_LinkFileRef_Socks_via_WebSockets /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
-		_LinkFileRef_Socks_via_rest /* Socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Socks" /* Socks.framework */; };
+		_LinkFileRef_TLS_via_App /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
 		_LinkFileRef_TLS_via_Auth /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
 		_LinkFileRef_TLS_via_Cache /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
 		_LinkFileRef_TLS_via_Cookies /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
@@ -334,7 +353,7 @@
 		_LinkFileRef_TLS_via_URI /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
 		_LinkFileRef_TLS_via_Vapor /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
 		_LinkFileRef_TLS_via_WebSockets /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
-		_LinkFileRef_TLS_via_rest /* TLS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TLS" /* TLS.framework */; };
+		_LinkFileRef_Transport_via_App /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
 		_LinkFileRef_Transport_via_Auth /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
 		_LinkFileRef_Transport_via_Cache /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
 		_LinkFileRef_Transport_via_Cookies /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
@@ -347,7 +366,7 @@
 		_LinkFileRef_Transport_via_TypeSafeRouting /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
 		_LinkFileRef_Transport_via_Vapor /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
 		_LinkFileRef_Transport_via_WebSockets /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
-		_LinkFileRef_Transport_via_rest /* Transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Transport" /* Transport.framework */; };
+		_LinkFileRef_TurnstileCrypto_via_App /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
 		_LinkFileRef_TurnstileCrypto_via_Auth /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
 		_LinkFileRef_TurnstileCrypto_via_Cache /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
 		_LinkFileRef_TurnstileCrypto_via_Cookies /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
@@ -359,7 +378,7 @@
 		_LinkFileRef_TurnstileCrypto_via_TurnstileWeb /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
 		_LinkFileRef_TurnstileCrypto_via_TypeSafeRouting /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
 		_LinkFileRef_TurnstileCrypto_via_Vapor /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
-		_LinkFileRef_TurnstileCrypto_via_rest /* TurnstileCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileCrypto" /* TurnstileCrypto.framework */; };
+		_LinkFileRef_TurnstileWeb_via_App /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
 		_LinkFileRef_TurnstileWeb_via_Auth /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
 		_LinkFileRef_TurnstileWeb_via_Cache /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
 		_LinkFileRef_TurnstileWeb_via_Cookies /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
@@ -369,7 +388,7 @@
 		_LinkFileRef_TurnstileWeb_via_Settings /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
 		_LinkFileRef_TurnstileWeb_via_TypeSafeRouting /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
 		_LinkFileRef_TurnstileWeb_via_Vapor /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
-		_LinkFileRef_TurnstileWeb_via_rest /* TurnstileWeb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TurnstileWeb" /* TurnstileWeb.framework */; };
+		_LinkFileRef_Turnstile_via_App /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
 		_LinkFileRef_Turnstile_via_Auth /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
 		_LinkFileRef_Turnstile_via_Cache /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
 		_LinkFileRef_Turnstile_via_Cookies /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
@@ -380,9 +399,9 @@
 		_LinkFileRef_Turnstile_via_TurnstileWeb /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
 		_LinkFileRef_Turnstile_via_TypeSafeRouting /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
 		_LinkFileRef_Turnstile_via_Vapor /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
-		_LinkFileRef_Turnstile_via_rest /* Turnstile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Turnstile" /* Turnstile.framework */; };
+		_LinkFileRef_TypeSafeRouting_via_App /* TypeSafeRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TypeSafeRouting" /* TypeSafeRouting.framework */; };
 		_LinkFileRef_TypeSafeRouting_via_Vapor /* TypeSafeRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TypeSafeRouting" /* TypeSafeRouting.framework */; };
-		_LinkFileRef_TypeSafeRouting_via_rest /* TypeSafeRouting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TypeSafeRouting" /* TypeSafeRouting.framework */; };
+		_LinkFileRef_URI_via_App /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
 		_LinkFileRef_URI_via_Auth /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
 		_LinkFileRef_URI_via_Cache /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
 		_LinkFileRef_URI_via_Cookies /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
@@ -394,8 +413,9 @@
 		_LinkFileRef_URI_via_TypeSafeRouting /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
 		_LinkFileRef_URI_via_Vapor /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
 		_LinkFileRef_URI_via_WebSockets /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
-		_LinkFileRef_URI_via_rest /* URI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_URI" /* URI.framework */; };
-		_LinkFileRef_Vapor_via_rest /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* Vapor.framework */; };
+		_LinkFileRef_VaporJWT_via_App /* VaporJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_VaporJWT" /* VaporJWT.framework */; };
+		_LinkFileRef_Vapor_via_App /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Vapor" /* Vapor.framework */; };
+		_LinkFileRef_WebSockets_via_App /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
 		_LinkFileRef_WebSockets_via_Auth /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
 		_LinkFileRef_WebSockets_via_Cache /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
 		_LinkFileRef_WebSockets_via_Cookies /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
@@ -405,7 +425,7 @@
 		_LinkFileRef_WebSockets_via_Settings /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
 		_LinkFileRef_WebSockets_via_TypeSafeRouting /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
 		_LinkFileRef_WebSockets_via_Vapor /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
-		_LinkFileRef_WebSockets_via_rest /* WebSockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_WebSockets" /* WebSockets.framework */; };
+		_LinkFileRef_libc_via_App /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_Auth /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_BCrypt /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_Cache /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
@@ -430,8 +450,8 @@
 		_LinkFileRef_libc_via_TypeSafeRouting /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_URI /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_Vapor /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
+		_LinkFileRef_libc_via_VaporJWT /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		_LinkFileRef_libc_via_WebSockets /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
-		_LinkFileRef_libc_via_rest /* libc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_libc" /* libc.framework */; };
 		"__src_cc_ref_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bitstr.c" /* a_bitstr.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bitstr.c" /* a_bitstr.c */; };
 		"__src_cc_ref_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bool.c" /* a_bool.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bool.c" /* a_bool.c */; };
 		"__src_cc_ref_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bytes.c" /* a_bytes.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bytes.c" /* a_bytes.c */; };
@@ -1528,272 +1548,313 @@
 		"__src_cc_ref_Packages/Vapor-1.0.3/Sources/Vapor/View/View.swift" /* View/View.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/View/View.swift" /* View/View.swift */; };
 		"__src_cc_ref_Packages/Vapor-1.0.3/Sources/Vapor/View/ViewRenderer.swift" /* View/ViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/View/ViewRenderer.swift" /* View/ViewRenderer.swift */; };
 		"__src_cc_ref_Packages/Vapor-1.0.3/Sources/Vapor/WebSockets/WebSockets.swift" /* WebSockets/WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/WebSockets/WebSockets.swift" /* WebSockets/WebSockets.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/AudienceClaim.swift" /* Claims/AudienceClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/AudienceClaim.swift" /* Claims/AudienceClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/Claim.swift" /* Claims/Claim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/Claim.swift" /* Claims/Claim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/EqualityClaim.swift" /* Claims/EqualityClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/EqualityClaim.swift" /* Claims/EqualityClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/ExpirationTimeClaim.swift" /* Claims/ExpirationTimeClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/ExpirationTimeClaim.swift" /* Claims/ExpirationTimeClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuedAtClaim.swift" /* Claims/IssuedAtClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuedAtClaim.swift" /* Claims/IssuedAtClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuerClaim.swift" /* Claims/IssuerClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuerClaim.swift" /* Claims/IssuerClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/JWTIDClaim.swift" /* Claims/JWTIDClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/JWTIDClaim.swift" /* Claims/JWTIDClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/NotBeforeClaim.swift" /* Claims/NotBeforeClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/NotBeforeClaim.swift" /* Claims/NotBeforeClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SecondsWithLeewayClaim.swift" /* Claims/SecondsWithLeewayClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SecondsWithLeewayClaim.swift" /* Claims/SecondsWithLeewayClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SubjectClaim.swift" /* Claims/SubjectClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SubjectClaim.swift" /* Claims/SubjectClaim.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/ClaimsVerifiable.swift" /* ClaimsVerifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/ClaimsVerifiable.swift" /* ClaimsVerifiable.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64Encoding.swift" /* Encodings/Base64Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64Encoding.swift" /* Encodings/Base64Encoding.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64URLEncoding.swift" /* Encodings/Base64URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64URLEncoding.swift" /* Encodings/Base64URLEncoding.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Encoding.swift" /* Encodings/Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Encoding.swift" /* Encodings/Encoding.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/AlgorithmHeader.swift" /* Headers/AlgorithmHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/AlgorithmHeader.swift" /* Headers/AlgorithmHeader.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/Header.swift" /* Headers/Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/Header.swift" /* Headers/Header.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/TypeHeader.swift" /* Headers/TypeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/TypeHeader.swift" /* Headers/TypeHeader.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWT.swift" /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWT.swift" /* JWT.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWTError.swift" /* JWTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWTError.swift" /* JWTError.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/NodeFailableInitializable.swift" /* NodeFailableInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/NodeFailableInitializable.swift" /* NodeFailableInitializable.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/SignatureVerifiable.swift" /* SignatureVerifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/SignatureVerifiable.swift" /* SignatureVerifiable.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/ECDSASigner.swift" /* Signers/ECDSASigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/ECDSASigner.swift" /* Signers/ECDSASigner.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/HMACSigner.swift" /* Signers/HMACSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/HMACSigner.swift" /* Signers/HMACSigner.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Signer.swift" /* Signers/Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Signer.swift" /* Signers/Signer.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Unsigned.swift" /* Signers/Unsigned.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Unsigned.swift" /* Signers/Unsigned.swift */; };
+		"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Storable.swift" /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Storable.swift" /* Storable.swift */; };
+		__src_cc_ref_Sources/App/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/App/main.swift /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5F7E80CD1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E911DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_libc";
 			remoteInfo = libc;
 		};
-		5F7E80CE1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E921DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Core";
 			remoteInfo = Core;
 		};
-		5F7E80CF1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E931DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_CLibreSSL";
 			remoteInfo = CLibreSSL;
 		};
-		5F7E80D01DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E941DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Random";
 			remoteInfo = Random;
 		};
-		5F7E80D11DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E951DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Essentials";
 			remoteInfo = Essentials;
 		};
-		5F7E80D21DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E961DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PathIndexable";
 			remoteInfo = PathIndexable;
 		};
-		5F7E80D31DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E971DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Polymorphic";
 			remoteInfo = Polymorphic;
 		};
-		5F7E80D41DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E981DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Node";
 			remoteInfo = Node;
 		};
-		5F7E80D51DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E991DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_SocksCore";
 			remoteInfo = SocksCore;
 		};
-		5F7E80D61DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9A1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Socks";
 			remoteInfo = Socks;
 		};
-		5F7E80D71DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9B1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_BCrypt";
 			remoteInfo = BCrypt;
 		};
-		5F7E80D81DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9C1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Cipher";
 			remoteInfo = Cipher;
 		};
-		5F7E80D91DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9D1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Hash";
 			remoteInfo = Hash;
 		};
-		5F7E80DA1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9E1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_HMAC";
 			remoteInfo = HMAC;
 		};
-		5F7E80DB1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27E9F1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_TLS";
 			remoteInfo = TLS;
 		};
-		5F7E80DC1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA01DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_URI";
 			remoteInfo = URI;
 		};
-		5F7E80DD1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA11DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Transport";
 			remoteInfo = Transport;
 		};
-		5F7E80DE1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA21DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_HTTP";
 			remoteInfo = HTTP;
 		};
-		5F7E80DF1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA31DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Jay";
 			remoteInfo = Jay;
 		};
-		5F7E80E01DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA41DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_TurnstileCrypto";
 			remoteInfo = TurnstileCrypto;
 		};
-		5F7E80E11DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA51DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Turnstile";
 			remoteInfo = Turnstile;
 		};
-		5F7E80E21DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA61DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Fluent";
 			remoteInfo = Fluent;
 		};
-		5F7E80E31DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA71DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_SMTP";
 			remoteInfo = SMTP;
 		};
-		5F7E80E41DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA81DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_WebSockets";
 			remoteInfo = WebSockets;
 		};
-		5F7E80E51DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EA91DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Console";
 			remoteInfo = Console;
 		};
-		5F7E80E61DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAA1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_JSON";
 			remoteInfo = JSON;
 		};
-		5F7E80E71DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAB1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_TurnstileWeb";
 			remoteInfo = TurnstileWeb;
 		};
-		5F7E80E81DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAC1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Leaf";
 			remoteInfo = Leaf;
 		};
-		5F7E80E91DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAD1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Cookies";
 			remoteInfo = Cookies;
 		};
-		5F7E80EA1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAE1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Cache";
 			remoteInfo = Cache;
 		};
-		5F7E80EB1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EAF1DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Routing";
 			remoteInfo = Routing;
 		};
-		5F7E80EC1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB01DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_HTTPRouting";
 			remoteInfo = HTTPRouting;
 		};
-		5F7E80ED1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB11DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_TypeSafeRouting";
 			remoteInfo = TypeSafeRouting;
 		};
-		5F7E80EE1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB21DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Auth";
 			remoteInfo = Auth;
 		};
-		5F7E80EF1DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB31DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Sessions";
 			remoteInfo = Sessions;
 		};
-		5F7E80F01DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB41DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Settings";
 			remoteInfo = Settings;
 		};
-		5F7E80F11DC34A140089A393 /* PBXContainerItemProxy */ = {
+		5FC27EB51DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_Vapor";
 			remoteInfo = Vapor;
 		};
+		5FC27EB61DC4BE5D00E16295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_VaporJWT";
+			remoteInfo = VaporJWT;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F7E80F71DC34A3C0089A393 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5FC27EBE1DC501E400E16295 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		5FC27EC01DC501E400E16295 /* JWTFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTFilter.swift; sourceTree = "<group>"; };
+		5FC27EC21DC501E400E16295 /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		5FC27EC41DC501E400E16295 /* JWTUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTUtil.swift; sourceTree = "<group>"; };
+		5FC27ECA1DC5041E00E16295 /* Request+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+User.swift"; sourceTree = "<group>"; };
+		5FC27ECC1DC5061000E16295 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Config /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
+		__PBXFileRef_Documentation /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bitstr.c" /* a_bitstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a_bitstr.c; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/a_bool.c" /* a_bool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a_bool.c; sourceTree = "<group>"; };
@@ -2891,7 +2952,36 @@
 		"__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/View/View.swift" /* View/View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View/View.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/View/ViewRenderer.swift" /* View/ViewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View/ViewRenderer.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/Vapor-1.0.3/Sources/Vapor/WebSockets/WebSockets.swift" /* WebSockets/WebSockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSockets/WebSockets.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/AudienceClaim.swift" /* Claims/AudienceClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/AudienceClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/Claim.swift" /* Claims/Claim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/Claim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/EqualityClaim.swift" /* Claims/EqualityClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/EqualityClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/ExpirationTimeClaim.swift" /* Claims/ExpirationTimeClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/ExpirationTimeClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuedAtClaim.swift" /* Claims/IssuedAtClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/IssuedAtClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuerClaim.swift" /* Claims/IssuerClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/IssuerClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/JWTIDClaim.swift" /* Claims/JWTIDClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/JWTIDClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/NotBeforeClaim.swift" /* Claims/NotBeforeClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/NotBeforeClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SecondsWithLeewayClaim.swift" /* Claims/SecondsWithLeewayClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/SecondsWithLeewayClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SubjectClaim.swift" /* Claims/SubjectClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims/SubjectClaim.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/ClaimsVerifiable.swift" /* ClaimsVerifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimsVerifiable.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64Encoding.swift" /* Encodings/Base64Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodings/Base64Encoding.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64URLEncoding.swift" /* Encodings/Base64URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodings/Base64URLEncoding.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Encoding.swift" /* Encodings/Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodings/Encoding.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/AlgorithmHeader.swift" /* Headers/AlgorithmHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers/AlgorithmHeader.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/Header.swift" /* Headers/Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers/Header.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/TypeHeader.swift" /* Headers/TypeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers/TypeHeader.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWT.swift" /* JWT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWTError.swift" /* JWTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/NodeFailableInitializable.swift" /* NodeFailableInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeFailableInitializable.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/SignatureVerifiable.swift" /* SignatureVerifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureVerifiable.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/ECDSASigner.swift" /* Signers/ECDSASigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signers/ECDSASigner.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/HMACSigner.swift" /* Signers/HMACSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signers/HMACSigner.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Signer.swift" /* Signers/Signer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signers/Signer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Unsigned.swift" /* Signers/Unsigned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signers/Unsigned.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Storable.swift" /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Resources /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/App/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_rest.xcodeproj/Configs/Project.xcconfig /* rest.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = rest.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		"_____Product_App" /* App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = App; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Auth" /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_BCrypt" /* BCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_CLibreSSL" /* CLibreSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CLibreSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2927,12 +3017,57 @@
 		"_____Product_TypeSafeRouting" /* TypeSafeRouting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TypeSafeRouting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_URI" /* URI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = URI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_Vapor" /* Vapor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Vapor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_VaporJWT" /* VaporJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VaporJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_WebSockets" /* WebSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WebSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_libc" /* libc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_rest" /* rest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = rest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_App" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_libc_via_App /* libc.framework in Frameworks */,
+				_LinkFileRef_Core_via_App /* Core.framework in Frameworks */,
+				_LinkFileRef_CLibreSSL_via_App /* CLibreSSL.framework in Frameworks */,
+				_LinkFileRef_Essentials_via_App /* Essentials.framework in Frameworks */,
+				_LinkFileRef_Random_via_App /* Random.framework in Frameworks */,
+				_LinkFileRef_BCrypt_via_App /* BCrypt.framework in Frameworks */,
+				_LinkFileRef_Cipher_via_App /* Cipher.framework in Frameworks */,
+				_LinkFileRef_Hash_via_App /* Hash.framework in Frameworks */,
+				_LinkFileRef_HMAC_via_App /* HMAC.framework in Frameworks */,
+				_LinkFileRef_PathIndexable_via_App /* PathIndexable.framework in Frameworks */,
+				_LinkFileRef_Polymorphic_via_App /* Polymorphic.framework in Frameworks */,
+				_LinkFileRef_Node_via_App /* Node.framework in Frameworks */,
+				_LinkFileRef_Fluent_via_App /* Fluent.framework in Frameworks */,
+				_LinkFileRef_SocksCore_via_App /* SocksCore.framework in Frameworks */,
+				_LinkFileRef_Socks_via_App /* Socks.framework in Frameworks */,
+				_LinkFileRef_TLS_via_App /* TLS.framework in Frameworks */,
+				_LinkFileRef_URI_via_App /* URI.framework in Frameworks */,
+				_LinkFileRef_Transport_via_App /* Transport.framework in Frameworks */,
+				_LinkFileRef_HTTP_via_App /* HTTP.framework in Frameworks */,
+				_LinkFileRef_SMTP_via_App /* SMTP.framework in Frameworks */,
+				_LinkFileRef_WebSockets_via_App /* WebSockets.framework in Frameworks */,
+				_LinkFileRef_Console_via_App /* Console.framework in Frameworks */,
+				_LinkFileRef_Jay_via_App /* Jay.framework in Frameworks */,
+				_LinkFileRef_JSON_via_App /* JSON.framework in Frameworks */,
+				_LinkFileRef_TurnstileCrypto_via_App /* TurnstileCrypto.framework in Frameworks */,
+				_LinkFileRef_Turnstile_via_App /* Turnstile.framework in Frameworks */,
+				_LinkFileRef_TurnstileWeb_via_App /* TurnstileWeb.framework in Frameworks */,
+				_LinkFileRef_Leaf_via_App /* Leaf.framework in Frameworks */,
+				_LinkFileRef_Cookies_via_App /* Cookies.framework in Frameworks */,
+				_LinkFileRef_Cache_via_App /* Cache.framework in Frameworks */,
+				_LinkFileRef_Auth_via_App /* Auth.framework in Frameworks */,
+				_LinkFileRef_Routing_via_App /* Routing.framework in Frameworks */,
+				_LinkFileRef_HTTPRouting_via_App /* HTTPRouting.framework in Frameworks */,
+				_LinkFileRef_Sessions_via_App /* Sessions.framework in Frameworks */,
+				_LinkFileRef_Settings_via_App /* Settings.framework in Frameworks */,
+				_LinkFileRef_TypeSafeRouting_via_App /* TypeSafeRouting.framework in Frameworks */,
+				_LinkFileRef_Vapor_via_App /* Vapor.framework in Frameworks */,
+				_LinkFileRef_VaporJWT_via_App /* VaporJWT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		"___LinkPhase_Auth" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -3550,6 +3685,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		"___LinkPhase_VaporJWT" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_libc_via_VaporJWT /* libc.framework in Frameworks */,
+				_LinkFileRef_Core_via_VaporJWT /* Core.framework in Frameworks */,
+				_LinkFileRef_CLibreSSL_via_VaporJWT /* CLibreSSL.framework in Frameworks */,
+				_LinkFileRef_Essentials_via_VaporJWT /* Essentials.framework in Frameworks */,
+				_LinkFileRef_Random_via_VaporJWT /* Random.framework in Frameworks */,
+				_LinkFileRef_BCrypt_via_VaporJWT /* BCrypt.framework in Frameworks */,
+				_LinkFileRef_Cipher_via_VaporJWT /* Cipher.framework in Frameworks */,
+				_LinkFileRef_Hash_via_VaporJWT /* Hash.framework in Frameworks */,
+				_LinkFileRef_HMAC_via_VaporJWT /* HMAC.framework in Frameworks */,
+				_LinkFileRef_PathIndexable_via_VaporJWT /* PathIndexable.framework in Frameworks */,
+				_LinkFileRef_Polymorphic_via_VaporJWT /* Polymorphic.framework in Frameworks */,
+				_LinkFileRef_Node_via_VaporJWT /* Node.framework in Frameworks */,
+				_LinkFileRef_Jay_via_VaporJWT /* Jay.framework in Frameworks */,
+				_LinkFileRef_JSON_via_VaporJWT /* JSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		"___LinkPhase_WebSockets" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -3579,98 +3735,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		"___LinkPhase_rest" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				_LinkFileRef_libc_via_rest /* libc.framework in Frameworks */,
-				_LinkFileRef_Core_via_rest /* Core.framework in Frameworks */,
-				_LinkFileRef_CLibreSSL_via_rest /* CLibreSSL.framework in Frameworks */,
-				_LinkFileRef_Essentials_via_rest /* Essentials.framework in Frameworks */,
-				_LinkFileRef_Random_via_rest /* Random.framework in Frameworks */,
-				_LinkFileRef_BCrypt_via_rest /* BCrypt.framework in Frameworks */,
-				_LinkFileRef_Cipher_via_rest /* Cipher.framework in Frameworks */,
-				_LinkFileRef_Hash_via_rest /* Hash.framework in Frameworks */,
-				_LinkFileRef_HMAC_via_rest /* HMAC.framework in Frameworks */,
-				_LinkFileRef_PathIndexable_via_rest /* PathIndexable.framework in Frameworks */,
-				_LinkFileRef_Polymorphic_via_rest /* Polymorphic.framework in Frameworks */,
-				_LinkFileRef_Node_via_rest /* Node.framework in Frameworks */,
-				_LinkFileRef_Fluent_via_rest /* Fluent.framework in Frameworks */,
-				_LinkFileRef_SocksCore_via_rest /* SocksCore.framework in Frameworks */,
-				_LinkFileRef_Socks_via_rest /* Socks.framework in Frameworks */,
-				_LinkFileRef_TLS_via_rest /* TLS.framework in Frameworks */,
-				_LinkFileRef_URI_via_rest /* URI.framework in Frameworks */,
-				_LinkFileRef_Transport_via_rest /* Transport.framework in Frameworks */,
-				_LinkFileRef_HTTP_via_rest /* HTTP.framework in Frameworks */,
-				_LinkFileRef_SMTP_via_rest /* SMTP.framework in Frameworks */,
-				_LinkFileRef_WebSockets_via_rest /* WebSockets.framework in Frameworks */,
-				_LinkFileRef_Console_via_rest /* Console.framework in Frameworks */,
-				_LinkFileRef_Jay_via_rest /* Jay.framework in Frameworks */,
-				_LinkFileRef_JSON_via_rest /* JSON.framework in Frameworks */,
-				_LinkFileRef_TurnstileCrypto_via_rest /* TurnstileCrypto.framework in Frameworks */,
-				_LinkFileRef_Turnstile_via_rest /* Turnstile.framework in Frameworks */,
-				_LinkFileRef_TurnstileWeb_via_rest /* TurnstileWeb.framework in Frameworks */,
-				_LinkFileRef_Leaf_via_rest /* Leaf.framework in Frameworks */,
-				_LinkFileRef_Cookies_via_rest /* Cookies.framework in Frameworks */,
-				_LinkFileRef_Cache_via_rest /* Cache.framework in Frameworks */,
-				_LinkFileRef_Auth_via_rest /* Auth.framework in Frameworks */,
-				_LinkFileRef_Routing_via_rest /* Routing.framework in Frameworks */,
-				_LinkFileRef_HTTPRouting_via_rest /* HTTPRouting.framework in Frameworks */,
-				_LinkFileRef_Sessions_via_rest /* Sessions.framework in Frameworks */,
-				_LinkFileRef_Settings_via_rest /* Settings.framework in Frameworks */,
-				_LinkFileRef_TypeSafeRouting_via_rest /* TypeSafeRouting.framework in Frameworks */,
-				_LinkFileRef_Vapor_via_rest /* Vapor.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F7E80F21DC34A3C0089A393 /* Resources */ = {
+		5FC27EBD1DC501E400E16295 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F7E80F31DC34A3C0089A393 /* Views */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5F7E80F31DC34A3C0089A393 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		5F7E80F41DC34A3C0089A393 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				5F7E80F51DC34A3C0089A393 /* App */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		5F7E80F51DC34A3C0089A393 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				5F7E80F61DC34A3C0089A393 /* Controllers */,
-				5F7E80F71DC34A3C0089A393 /* main.swift */,
-				5F7E80F81DC34A3C0089A393 /* Models */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		5F7E80F61DC34A3C0089A393 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
+				5FC27ECC1DC5061000E16295 /* Controller.swift */,
+				5FC27EBE1DC501E400E16295 /* UserController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5F7E80F81DC34A3C0089A393 /* Models */ = {
+		5FC27EBF1DC501E400E16295 /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
+				5FC27EC01DC501E400E16295 /* JWTFilter.swift */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		5FC27EC11DC501E400E16295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FC27EC21DC501E400E16295 /* AppUser.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5FC27EC31DC501E400E16295 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5FC27EC91DC5041400E16295 /* Extensions */,
+				5FC27EC41DC501E400E16295 /* JWTUtil.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5FC27EC91DC5041400E16295 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5FC27ECA1DC5041E00E16295 /* Request+User.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		Dependencies_ /* Dependencies */ = {
@@ -3692,6 +3799,7 @@
 				"_______Group_SocksCore" /* SocksCore */,
 				"_______Group_Essentials" /* Essentials */,
 				"_______Group_Console" /* Console */,
+				"_______Group_VaporJWT" /* VaporJWT */,
 				"_______Group_Cipher" /* Cipher */,
 				"_______Group_Cookies" /* Cookies */,
 				"_______Group_HTTP" /* HTTP */,
@@ -3720,12 +3828,14 @@
 		"___RootGroup_" = {
 			isa = PBXGroup;
 			children = (
-				"_____Configs_" /* Configs */,
-				Dependencies_ /* Dependencies */,
 				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				__PBXFileRef_Config /* Config */,
+				__PBXFileRef_Documentation /* Documentation */,
+				__PBXFileRef_Resources /* Resources */,
+				Dependencies_ /* Dependencies */,
 				"____Products_" /* Products */,
-				5F7E80F21DC34A3C0089A393 /* Resources */,
-				5F7E80F41DC34A3C0089A393 /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3769,7 +3879,8 @@
 				"_____Product_Settings" /* Settings.framework */,
 				"_____Product_TypeSafeRouting" /* TypeSafeRouting.framework */,
 				"_____Product_Vapor" /* Vapor.framework */,
-				"_____Product_rest" /* rest */,
+				"_____Product_VaporJWT" /* VaporJWT.framework */,
+				"_____Product_App" /* App */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3780,6 +3891,27 @@
 				__PBXFileRef_rest.xcodeproj/Configs/Project.xcconfig /* rest.xcodeproj/Configs/Project.xcconfig */,
 			);
 			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_App" /* App */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_App" /* App */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/App/main.swift /* main.swift */,
+				5FC27EBD1DC501E400E16295 /* Controllers */,
+				5FC27EBF1DC501E400E16295 /* Middleware */,
+				5FC27EC11DC501E400E16295 /* Models */,
+				5FC27EC31DC501E400E16295 /* Utilities */,
+			);
+			name = App;
+			path = Sources/App;
 			sourceTree = "<group>";
 		};
 		"_______Group_Auth" /* Auth */ = {
@@ -5143,6 +5275,40 @@
 			path = "Packages/Vapor-1.0.3/Sources/Vapor";
 			sourceTree = "<group>";
 		};
+		"_______Group_VaporJWT" /* VaporJWT */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/ClaimsVerifiable.swift" /* ClaimsVerifiable.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWT.swift" /* JWT.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWTError.swift" /* JWTError.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/NodeFailableInitializable.swift" /* NodeFailableInitializable.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/SignatureVerifiable.swift" /* SignatureVerifiable.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Storable.swift" /* Storable.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/AudienceClaim.swift" /* Claims/AudienceClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/Claim.swift" /* Claims/Claim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/EqualityClaim.swift" /* Claims/EqualityClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/ExpirationTimeClaim.swift" /* Claims/ExpirationTimeClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuedAtClaim.swift" /* Claims/IssuedAtClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuerClaim.swift" /* Claims/IssuerClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/JWTIDClaim.swift" /* Claims/JWTIDClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/NotBeforeClaim.swift" /* Claims/NotBeforeClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SecondsWithLeewayClaim.swift" /* Claims/SecondsWithLeewayClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SubjectClaim.swift" /* Claims/SubjectClaim.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64Encoding.swift" /* Encodings/Base64Encoding.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64URLEncoding.swift" /* Encodings/Base64URLEncoding.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Encoding.swift" /* Encodings/Encoding.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/AlgorithmHeader.swift" /* Headers/AlgorithmHeader.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/Header.swift" /* Headers/Header.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/TypeHeader.swift" /* Headers/TypeHeader.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/ECDSASigner.swift" /* Signers/ECDSASigner.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/HMACSigner.swift" /* Signers/HMACSigner.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Signer.swift" /* Signers/Signer.swift */,
+				"__PBXFileRef_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Unsigned.swift" /* Signers/Unsigned.swift */,
+			);
+			name = VaporJWT;
+			path = "Packages/VaporJWT-0.4.1/Sources/VaporJWT";
+			sourceTree = "<group>";
+		};
 		"_______Group_WebSockets" /* WebSockets */ = {
 			isa = PBXGroup;
 			children = (
@@ -5177,6 +5343,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		"______Target_App" /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_App" /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				CompilePhase_App /* Sources */,
+				"___LinkPhase_App" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Core /* PBXTargetDependency */,
+				__Dependency_libc /* PBXTargetDependency */,
+				__Dependency_CLibreSSL /* PBXTargetDependency */,
+				__Dependency_BCrypt /* PBXTargetDependency */,
+				__Dependency_Cipher /* PBXTargetDependency */,
+				__Dependency_Essentials /* PBXTargetDependency */,
+				__Dependency_Hash /* PBXTargetDependency */,
+				__Dependency_HMAC /* PBXTargetDependency */,
+				__Dependency_Random /* PBXTargetDependency */,
+				__Dependency_PathIndexable /* PBXTargetDependency */,
+				__Dependency_Polymorphic /* PBXTargetDependency */,
+				__Dependency_Node /* PBXTargetDependency */,
+				__Dependency_Fluent /* PBXTargetDependency */,
+				__Dependency_Socks /* PBXTargetDependency */,
+				__Dependency_SocksCore /* PBXTargetDependency */,
+				__Dependency_TLS /* PBXTargetDependency */,
+				__Dependency_HTTP /* PBXTargetDependency */,
+				__Dependency_SMTP /* PBXTargetDependency */,
+				__Dependency_Transport /* PBXTargetDependency */,
+				__Dependency_URI /* PBXTargetDependency */,
+				__Dependency_WebSockets /* PBXTargetDependency */,
+				__Dependency_Console /* PBXTargetDependency */,
+				__Dependency_Jay /* PBXTargetDependency */,
+				__Dependency_JSON /* PBXTargetDependency */,
+				__Dependency_Turnstile /* PBXTargetDependency */,
+				__Dependency_TurnstileCrypto /* PBXTargetDependency */,
+				__Dependency_TurnstileWeb /* PBXTargetDependency */,
+				__Dependency_Leaf /* PBXTargetDependency */,
+				__Dependency_Auth /* PBXTargetDependency */,
+				__Dependency_Cache /* PBXTargetDependency */,
+				__Dependency_Cookies /* PBXTargetDependency */,
+				__Dependency_HTTPRouting /* PBXTargetDependency */,
+				__Dependency_Routing /* PBXTargetDependency */,
+				__Dependency_Sessions /* PBXTargetDependency */,
+				__Dependency_Settings /* PBXTargetDependency */,
+				__Dependency_TypeSafeRouting /* PBXTargetDependency */,
+				__Dependency_Vapor /* PBXTargetDependency */,
+				__Dependency_VaporJWT /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = App;
+			productReference = "_____Product_App" /* App */;
+			productType = "com.apple.product-type.tool";
+		};
 		"______Target_Auth" /* Auth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = "_______Confs_Auth" /* Build configuration list for PBXNativeTarget "Auth" */;
@@ -6107,6 +6327,36 @@
 			productReference = "_____Product_Vapor" /* Vapor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		"______Target_VaporJWT" /* VaporJWT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_VaporJWT" /* Build configuration list for PBXNativeTarget "VaporJWT" */;
+			buildPhases = (
+				CompilePhase_VaporJWT /* Sources */,
+				"___LinkPhase_VaporJWT" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Core /* PBXTargetDependency */,
+				__Dependency_libc /* PBXTargetDependency */,
+				__Dependency_CLibreSSL /* PBXTargetDependency */,
+				__Dependency_BCrypt /* PBXTargetDependency */,
+				__Dependency_Cipher /* PBXTargetDependency */,
+				__Dependency_Essentials /* PBXTargetDependency */,
+				__Dependency_Hash /* PBXTargetDependency */,
+				__Dependency_HMAC /* PBXTargetDependency */,
+				__Dependency_Random /* PBXTargetDependency */,
+				__Dependency_PathIndexable /* PBXTargetDependency */,
+				__Dependency_Polymorphic /* PBXTargetDependency */,
+				__Dependency_Node /* PBXTargetDependency */,
+				__Dependency_Jay /* PBXTargetDependency */,
+				__Dependency_JSON /* PBXTargetDependency */,
+			);
+			name = VaporJWT;
+			productName = VaporJWT;
+			productReference = "_____Product_VaporJWT" /* VaporJWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"______Target_WebSockets" /* WebSockets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = "_______Confs_WebSockets" /* Build configuration list for PBXNativeTarget "WebSockets" */;
@@ -6153,59 +6403,6 @@
 			productName = libc;
 			productReference = "_____Product_libc" /* libc.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		"______Target_rest" /* rest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_rest" /* Build configuration list for PBXNativeTarget "rest" */;
-			buildPhases = (
-				CompilePhase_rest /* Sources */,
-				"___LinkPhase_rest" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_Core /* PBXTargetDependency */,
-				__Dependency_libc /* PBXTargetDependency */,
-				__Dependency_CLibreSSL /* PBXTargetDependency */,
-				__Dependency_BCrypt /* PBXTargetDependency */,
-				__Dependency_Cipher /* PBXTargetDependency */,
-				__Dependency_Essentials /* PBXTargetDependency */,
-				__Dependency_Hash /* PBXTargetDependency */,
-				__Dependency_HMAC /* PBXTargetDependency */,
-				__Dependency_Random /* PBXTargetDependency */,
-				__Dependency_PathIndexable /* PBXTargetDependency */,
-				__Dependency_Polymorphic /* PBXTargetDependency */,
-				__Dependency_Node /* PBXTargetDependency */,
-				__Dependency_Fluent /* PBXTargetDependency */,
-				__Dependency_Socks /* PBXTargetDependency */,
-				__Dependency_SocksCore /* PBXTargetDependency */,
-				__Dependency_TLS /* PBXTargetDependency */,
-				__Dependency_HTTP /* PBXTargetDependency */,
-				__Dependency_SMTP /* PBXTargetDependency */,
-				__Dependency_Transport /* PBXTargetDependency */,
-				__Dependency_URI /* PBXTargetDependency */,
-				__Dependency_WebSockets /* PBXTargetDependency */,
-				__Dependency_Console /* PBXTargetDependency */,
-				__Dependency_Jay /* PBXTargetDependency */,
-				__Dependency_JSON /* PBXTargetDependency */,
-				__Dependency_Turnstile /* PBXTargetDependency */,
-				__Dependency_TurnstileCrypto /* PBXTargetDependency */,
-				__Dependency_TurnstileWeb /* PBXTargetDependency */,
-				__Dependency_Leaf /* PBXTargetDependency */,
-				__Dependency_Auth /* PBXTargetDependency */,
-				__Dependency_Cache /* PBXTargetDependency */,
-				__Dependency_Cookies /* PBXTargetDependency */,
-				__Dependency_HTTPRouting /* PBXTargetDependency */,
-				__Dependency_Routing /* PBXTargetDependency */,
-				__Dependency_Sessions /* PBXTargetDependency */,
-				__Dependency_Settings /* PBXTargetDependency */,
-				__Dependency_TypeSafeRouting /* PBXTargetDependency */,
-				__Dependency_Vapor /* PBXTargetDependency */,
-			);
-			name = rest;
-			productName = rest;
-			productReference = "_____Product_rest" /* rest */;
-			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -6264,12 +6461,27 @@
 				"______Target_Settings" /* Settings */,
 				"______Target_TypeSafeRouting" /* TypeSafeRouting */,
 				"______Target_Vapor" /* Vapor */,
-				"______Target_rest" /* rest */,
+				"______Target_VaporJWT" /* VaporJWT */,
+				"______Target_App" /* App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CompilePhase_App /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				5FC27EC71DC501E400E16295 /* AppUser.swift in Sources */,
+				5FC27EC81DC501E400E16295 /* JWTUtil.swift in Sources */,
+				5FC27EC51DC501E400E16295 /* UserController.swift in Sources */,
+				__src_cc_ref_Sources/App/main.swift /* main.swift in Sources */,
+				5FC27ECB1DC5041E00E16295 /* Request+User.swift in Sources */,
+				5FC27EC61DC501E400E16295 /* JWTFilter.swift in Sources */,
+				5FC27ECD1DC5061000E16295 /* Controller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CompilePhase_Auth /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -7596,6 +7808,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CompilePhase_VaporJWT /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/ClaimsVerifiable.swift" /* ClaimsVerifiable.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWT.swift" /* JWT.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/JWTError.swift" /* JWTError.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/NodeFailableInitializable.swift" /* NodeFailableInitializable.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/SignatureVerifiable.swift" /* SignatureVerifiable.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Storable.swift" /* Storable.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/AudienceClaim.swift" /* Claims/AudienceClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/Claim.swift" /* Claims/Claim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/EqualityClaim.swift" /* Claims/EqualityClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/ExpirationTimeClaim.swift" /* Claims/ExpirationTimeClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuedAtClaim.swift" /* Claims/IssuedAtClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/IssuerClaim.swift" /* Claims/IssuerClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/JWTIDClaim.swift" /* Claims/JWTIDClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/NotBeforeClaim.swift" /* Claims/NotBeforeClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SecondsWithLeewayClaim.swift" /* Claims/SecondsWithLeewayClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Claims/SubjectClaim.swift" /* Claims/SubjectClaim.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64Encoding.swift" /* Encodings/Base64Encoding.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Base64URLEncoding.swift" /* Encodings/Base64URLEncoding.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Encodings/Encoding.swift" /* Encodings/Encoding.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/AlgorithmHeader.swift" /* Headers/AlgorithmHeader.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/Header.swift" /* Headers/Header.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Headers/TypeHeader.swift" /* Headers/TypeHeader.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/ECDSASigner.swift" /* Signers/ECDSASigner.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/HMACSigner.swift" /* Signers/HMACSigner.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Signer.swift" /* Signers/Signer.swift in Sources */,
+				"__src_cc_ref_Packages/VaporJWT-0.4.1/Sources/VaporJWT/Signers/Unsigned.swift" /* Signers/Unsigned.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CompilePhase_WebSockets /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -7625,205 +7870,216 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CompilePhase_rest /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				5F7E80FA1DC34B520089A393 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		__Dependency_Auth /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Auth" /* Auth */;
-			targetProxy = 5F7E80EE1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB21DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_BCrypt /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_BCrypt" /* BCrypt */;
-			targetProxy = 5F7E80D71DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9B1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_CLibreSSL /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_CLibreSSL" /* CLibreSSL */;
-			targetProxy = 5F7E80CF1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E931DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Cache /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Cache" /* Cache */;
-			targetProxy = 5F7E80EA1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAE1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Cipher /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Cipher" /* Cipher */;
-			targetProxy = 5F7E80D81DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9C1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Console /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Console" /* Console */;
-			targetProxy = 5F7E80E51DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA91DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Cookies /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Cookies" /* Cookies */;
-			targetProxy = 5F7E80E91DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAD1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Core /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Core" /* Core */;
-			targetProxy = 5F7E80CE1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E921DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Essentials /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Essentials" /* Essentials */;
-			targetProxy = 5F7E80D11DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E951DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Fluent /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Fluent" /* Fluent */;
-			targetProxy = 5F7E80E21DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA61DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_HMAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_HMAC" /* HMAC */;
-			targetProxy = 5F7E80DA1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9E1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_HTTP /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_HTTP" /* HTTP */;
-			targetProxy = 5F7E80DE1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA21DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_HTTPRouting /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_HTTPRouting" /* HTTPRouting */;
-			targetProxy = 5F7E80EC1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB01DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Hash /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Hash" /* Hash */;
-			targetProxy = 5F7E80D91DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9D1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_JSON /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_JSON" /* JSON */;
-			targetProxy = 5F7E80E61DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAA1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Jay /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Jay" /* Jay */;
-			targetProxy = 5F7E80DF1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA31DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Leaf /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Leaf" /* Leaf */;
-			targetProxy = 5F7E80E81DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAC1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Node /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Node" /* Node */;
-			targetProxy = 5F7E80D41DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E981DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_PathIndexable /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PathIndexable" /* PathIndexable */;
-			targetProxy = 5F7E80D21DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E961DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Polymorphic /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Polymorphic" /* Polymorphic */;
-			targetProxy = 5F7E80D31DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E971DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Random /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Random" /* Random */;
-			targetProxy = 5F7E80D01DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E941DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Routing /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Routing" /* Routing */;
-			targetProxy = 5F7E80EB1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAF1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_SMTP /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_SMTP" /* SMTP */;
-			targetProxy = 5F7E80E31DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA71DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Sessions /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Sessions" /* Sessions */;
-			targetProxy = 5F7E80EF1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB31DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Settings /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Settings" /* Settings */;
-			targetProxy = 5F7E80F01DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB41DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Socks /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Socks" /* Socks */;
-			targetProxy = 5F7E80D61DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9A1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_SocksCore /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_SocksCore" /* SocksCore */;
-			targetProxy = 5F7E80D51DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E991DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_TLS /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_TLS" /* TLS */;
-			targetProxy = 5F7E80DB1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E9F1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Transport /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Transport" /* Transport */;
-			targetProxy = 5F7E80DD1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA11DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Turnstile /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Turnstile" /* Turnstile */;
-			targetProxy = 5F7E80E11DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA51DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_TurnstileCrypto /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_TurnstileCrypto" /* TurnstileCrypto */;
-			targetProxy = 5F7E80E01DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA41DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_TurnstileWeb /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_TurnstileWeb" /* TurnstileWeb */;
-			targetProxy = 5F7E80E71DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EAB1DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_TypeSafeRouting /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_TypeSafeRouting" /* TypeSafeRouting */;
-			targetProxy = 5F7E80ED1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB11DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_URI /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_URI" /* URI */;
-			targetProxy = 5F7E80DC1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA01DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_Vapor /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_Vapor" /* Vapor */;
-			targetProxy = 5F7E80F11DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EB51DC4BE5D00E16295 /* PBXContainerItemProxy */;
+		};
+		__Dependency_VaporJWT /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_VaporJWT" /* VaporJWT */;
+			targetProxy = 5FC27EB61DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_WebSockets /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_WebSockets" /* WebSockets */;
-			targetProxy = 5F7E80E41DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27EA81DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 		__Dependency_libc /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_libc" /* libc */;
-			targetProxy = 5F7E80CD1DC34A140089A393 /* PBXContainerItemProxy */;
+			targetProxy = 5FC27E911DC4BE5D00E16295 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		_ReleaseConf_App /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/magnus.eriksson/mag/github/SwiftVapor/docker/rest/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include";
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		_ReleaseConf_Auth /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7947,10 +8203,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = rest.xcodeproj/Core_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -8409,6 +8662,23 @@
 			};
 			name = Release;
 		};
+		_ReleaseConf_VaporJWT /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/magnus.eriksson/mag/github/SwiftVapor/docker/rest/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include";
+				INFOPLIST_FILE = rest.xcodeproj/VaporJWT_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = VaporJWT;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		_ReleaseConf_WebSockets /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8442,7 +8712,7 @@
 			};
 			name = Release;
 		};
-		_ReleaseConf_rest /* Release */ = {
+		"___DebugConf_App" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
@@ -8452,9 +8722,10 @@
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 		"___DebugConf_Auth" /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -8586,10 +8857,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = rest.xcodeproj/Core_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -9076,6 +9344,24 @@
 			};
 			name = Debug;
 		};
+		"___DebugConf_VaporJWT" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/magnus.eriksson/mag/github/SwiftVapor/docker/rest/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include";
+				INFOPLIST_FILE = rest.xcodeproj/VaporJWT_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = VaporJWT;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
 		"___DebugConf_WebSockets" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9111,26 +9397,10 @@
 			};
 			name = Debug;
 		};
-		"___DebugConf_rest" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
-				HEADER_SEARCH_PATHS = "/Users/magnus.eriksson/mag/github/SwiftVapor/docker/rest/Packages/CLibreSSL-1.0.0/Sources/CLibreSSL/include";
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
 		"_____Release_" /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = __PBXFileRef_rest.xcodeproj/Configs/Project.xcconfig /* rest.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Packages";
 			};
 			name = Release;
 		};
@@ -9138,7 +9408,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = __PBXFileRef_rest.xcodeproj/Configs/Project.xcconfig /* rest.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Packages";
 			};
 			name = Debug;
 		};
@@ -9150,6 +9419,15 @@
 			buildConfigurations = (
 				"_______Debug_" /* Debug */,
 				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_App" /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_App" /* Debug */,
+				_ReleaseConf_App /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -9469,6 +9747,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		"_______Confs_VaporJWT" /* Build configuration list for PBXNativeTarget "VaporJWT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_VaporJWT" /* Debug */,
+				_ReleaseConf_VaporJWT /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		"_______Confs_WebSockets" /* Build configuration list for PBXNativeTarget "WebSockets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -9483,15 +9770,6 @@
 			buildConfigurations = (
 				"___DebugConf_libc" /* Debug */,
 				_ReleaseConf_libc /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_rest" /* Build configuration list for PBXNativeTarget "rest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_rest" /* Debug */,
-				_ReleaseConf_rest /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

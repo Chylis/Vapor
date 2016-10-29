@@ -5,6 +5,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "8FE2B4BB55A3C9D7B3B78FD1E2302636E924BDDC" : 9223372036854775807,
+    "0A2CDB7EE0CB08CFB1496AAF2E05A8B2023B6C50" : 9223372036854775807,
     "CAD34EAF822A6E9266FE422B098563268FCFE71F" : 9223372036854775807,
     "52AFDBC9624F22D94526E36BBEE271C6D7FC65D3" : 9223372036854775807,
     "6400345F86F53D4096DD633F09AAE772FA6A202B" : 9223372036854775807
@@ -12,6 +13,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9905BD58-7164-48AB-9A13-EB8E3FA1FF39",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "8FE2B4BB55A3C9D7B3B78FD1E2302636E924BDDC" : "SwiftVapor\/docker\/rest\/Packages\/Jay-1.0.0\/",
+    "0A2CDB7EE0CB08CFB1496AAF2E05A8B2023B6C50" : "SwiftVapor\/docker\/rest\/Packages\/VaporJWT-0.4.1\/",
     "CAD34EAF822A6E9266FE422B098563268FCFE71F" : "SwiftVapor\/",
     "52AFDBC9624F22D94526E36BBEE271C6D7FC65D3" : "SwiftVapor\/docker\/rest\/Packages\/Vapor-1.0.3\/",
     "6400345F86F53D4096DD633F09AAE772FA6A202B" : "SwiftVapor\/docker\/rest\/Packages\/Leaf-1.0.2\/"
@@ -20,6 +22,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "docker\/rest\/rest.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/siemensikkema\/vapor-jwt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A2CDB7EE0CB08CFB1496AAF2E05A8B2023B6C50"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vapor\/vapor.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

@@ -1,0 +1,4 @@
+1) User registers with a username and password
+2) Certain endpoints are protected - authentication is required
+3) Users log in to receive a JWT token
+4) Users supply the received JWT token in subsequent requests
