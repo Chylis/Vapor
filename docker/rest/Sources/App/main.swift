@@ -10,7 +10,9 @@ let drop = Droplet(database: database, preparations: [AppUser.self])
 //Setup routes
 let apiVersion = "v1"
 let authFilter = JWTFilter()
-let routeBuilder: RouteGroup<Responder, Droplet> = drop.grouped(apiVersion)
+let logFilter = LogFilter()
+let abortFilter = AbortMiddleware()
+let routeBuilder: RouteGroup<Responder, RouteGroup<Responder, RouteGroup<Responder, Droplet>>> = drop.grouped(logFilter).grouped(abortFilter).grouped(apiVersion)
 let controllers: [Controller] = [UserController()]
 for controller in controllers {
     controller.register(with: routeBuilder, authFilter: authFilter)

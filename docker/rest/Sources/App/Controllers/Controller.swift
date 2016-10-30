@@ -16,5 +16,5 @@ protocol Controller {
      - parameter builder: The route builder used to register public routes
      - parameter authFilter: An authfilter used to register routes that require authentication
      */
-    func register(with builder: RouteGroup<Responder, Droplet>, authFilter: Middleware)
+    func register<D>(with builder: RouteGroup<Responder, D>, authFilter: Middleware)
 }

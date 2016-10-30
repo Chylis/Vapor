@@ -13,6 +13,7 @@
 		5FC27EC81DC501E400E16295 /* JWTUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27EC41DC501E400E16295 /* JWTUtil.swift */; };
 		5FC27ECB1DC5041E00E16295 /* Request+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27ECA1DC5041E00E16295 /* Request+User.swift */; };
 		5FC27ECD1DC5061000E16295 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27ECC1DC5061000E16295 /* Controller.swift */; };
+		5FC27ED21DC61A2E00E16295 /* LogFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC27ED11DC61A2E00E16295 /* LogFilter.swift */; };
 		_LinkFileRef_Auth_via_App /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Auth" /* Auth.framework */; };
 		_LinkFileRef_Auth_via_Vapor /* Auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Auth" /* Auth.framework */; };
 		_LinkFileRef_BCrypt_via_App /* BCrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_BCrypt" /* BCrypt.framework */; };
@@ -1853,6 +1854,7 @@
 		5FC27EC41DC501E400E16295 /* JWTUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTUtil.swift; sourceTree = "<group>"; };
 		5FC27ECA1DC5041E00E16295 /* Request+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+User.swift"; sourceTree = "<group>"; };
 		5FC27ECC1DC5061000E16295 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		5FC27ED11DC61A2E00E16295 /* LogFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFilter.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Config /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
 		__PBXFileRef_Documentation /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -3751,6 +3753,7 @@
 			isa = PBXGroup;
 			children = (
 				5FC27EC01DC501E400E16295 /* JWTFilter.swift */,
+				5FC27ED11DC61A2E00E16295 /* LogFilter.swift */,
 			);
 			path = Middleware;
 			sourceTree = "<group>";
@@ -6474,6 +6477,7 @@
 			files = (
 				5FC27EC71DC501E400E16295 /* AppUser.swift in Sources */,
 				5FC27EC81DC501E400E16295 /* JWTUtil.swift in Sources */,
+				5FC27ED21DC61A2E00E16295 /* LogFilter.swift in Sources */,
 				5FC27EC51DC501E400E16295 /* UserController.swift in Sources */,
 				__src_cc_ref_Sources/App/main.swift /* main.swift in Sources */,
 				5FC27ECB1DC5041E00E16295 /* Request+User.swift in Sources */,

@@ -13,7 +13,7 @@ import Routing
 
 extension UserController : Controller {
     
-    func register(with builder: RouteGroup<Responder, Droplet>, authFilter: Middleware) {
+    func register<D>(with builder: RouteGroup<Responder, D>, authFilter: Middleware) {
         builder.group("users") { users in
             users.post("register", handler: register)
             users.post("login", handler: login)
