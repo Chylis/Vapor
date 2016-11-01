@@ -10,6 +10,7 @@ import HTTP
 import Vapor
 import BCrypt
 import Routing
+import Foundation
 
 extension UserController : Controller {
     
@@ -21,6 +22,8 @@ extension UserController : Controller {
             users.group(authFilter) { secure in
                 secure.get(handler: allUsers)
                 secure.get("me", handler: currentUser)
+                secure.post("me", handler: updateUserAvatar)
+                secure.get(":username", handler: user)
             }
         }
     }
@@ -96,6 +99,32 @@ final class UserController {
         guard let user = request.currentUser() else {
             throw Abort.custom(status: .internalServerError, message: "Unable to find user inside authenticated endpoint")
         }
-        return try user.converted(to: JSON.self)
+        return user
+    }
+    
+    /// Returns the user with username 'username'
+    fileprivate func user(_ request: Request) throws -> ResponseRepresentable {
+        guard let username = request.parameters["username"] else {
+            throw Abort.custom(status: .badRequest, message: "username is required")
+        }
+        guard let user = try AppUser.query().filter("username", username).first() else {
+            throw Abort.notFound
+        }
+        return user
+    }
+    
+    fileprivate func updateUserAvatar(_ request: Request) throws -> ResponseRepresentable {
+        guard var user = request.currentUser() else {
+            throw Abort.custom(status: .internalServerError, message: "Unable to find user inside authenticated endpoint")
+        }
+        guard let base64Bytes = request.body.bytes,
+            let base64String = try? String(bytes: base64Bytes) else {
+            throw Abort.custom(status: .badRequest, message: "missing data")
+        }
+        
+        user.base64Avatar = base64String
+        try user.save()
+        
+        return Response(status: .ok)
     }
 }

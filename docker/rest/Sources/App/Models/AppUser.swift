@@ -6,6 +6,7 @@
 //
 //
 
+import Foundation
 import Vapor
 
 final class AppUser: Model {
@@ -13,6 +14,8 @@ final class AppUser: Model {
     //MARK: - Custom properties
     
     let username: String
+    var base64Avatar: String?
+    
     //FIXME: password is returned to client through API
     let password: String
     
@@ -28,18 +31,22 @@ final class AppUser: Model {
     
     //MARK: - NodeConvertible conformance
     
+    //Create the model from the persisted data.
     init(node: Node, in context: Context) throws {
         id = nil
         username = try node.extract("username")
         password = try node.extract("password")
+        base64Avatar = try node.extract("avatar")
     }
     
     func makeNode(context: Context) throws -> Node {
-        return try Node(node: [
+        let array = [
             "id": id,
-            "username":username,
-            "password":password
-            ])
+            "username":username.makeNode(),
+            "password":password.makeNode(),
+            "avatar": base64Avatar?.makeNode()
+        ]
+        return try Node(node: array)
     }
     
     //MARK: - Preparation conformance

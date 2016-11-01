@@ -1,5 +1,3 @@
-1) User Avatar
-2) Update avatar
-3) Remove avatar
-4) Deploy in Docker on magpie.ydns.eu
-5) Fix FIXMEs and TODOs
+1) Remove avatar
+2) Fix FIXMEs and TODOs, improve structure, etc
+3) Deploy in Docker on magpie.ydns.eu

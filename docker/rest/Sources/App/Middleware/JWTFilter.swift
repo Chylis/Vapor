@@ -20,7 +20,8 @@ final class JWTFilter: Middleware {
         let components = bearer.components(separatedBy: " ")
         guard let token = components.last,
             let jwt = JWTUtil().decodeJWT(token),
-            let username = jwt.username() else {
+            let username = jwt.username(),
+            try AppUser.query().filter("username", username).first() != nil else {
             throw Abort.custom(status: .unauthorized, message: "Invalid JWT")
         }
         
