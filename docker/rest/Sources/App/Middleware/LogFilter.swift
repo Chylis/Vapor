@@ -15,7 +15,8 @@ final class LogFilter: Middleware {
         let output: String
         
         defer {
-            let tag = "\(Date())"
+            //NOTE: Use Date().timeIntervalSinceReferenceDate (I found out the hard way that 'let tag = "\(Date())"' causes a crash on Ubuntu15.10. See https://bugs.swift.org/browse/SR-2485)
+            let tag = "\(Date().timeIntervalSinceReferenceDate)"
             print("\n\n\(tag):\n\t\(input)\n\n\t\(output)")
         }
         
